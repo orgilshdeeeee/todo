@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 120px;
+  background-image: url(backgroundImage.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+/* !container */
+#con {
+  width: 295px;
+  height: fit-content;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 236, 240);
+}
+.title {
+  display: flex;
+  font-family: bold;
+  font-weight: 600;
+  padding: 8px;
+  gap: 12px;
+  font-size: 20px;
+}
+.count {
+  color: rgba(0, 0, 0, 0.5);
+}
+#btn {
+  border: none;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  border-radius: 4px;
+  gap: 16px;
+  background-color: rgb(235, 236, 240);
+}
+#btn > span {
+  font-size: 16px;
+}
+#btn:hover {
+  background-color: rgb(211 212 216);
+}
+/* !addTask */
+#addTaskBar {
+  box-sizing: border-box;
+  width: 400px;
+  height: fit-content;
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 999;
+  top: 300px;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+}
+.block {
+  display: block;
+}
+#Title {
+  font-size: 14px;
+}
+#Title > input {
+  width: 98%;
+  height: 30px;
+  border-radius: 4px;
+  border: solid 1px lightgrey;
+}
+#Description {
+  font-size: 14px;
+}
+#Description > input {
+  width: 98%;
+  height: 100px;
+  border-radius: 4px;
+  border: solid 1px lightgrey;
+}
+#Status {
+  font-size: 14px;
+}
+#Status > select {
+  width: 98%;
+  height: 30px;
+  border-radius: 4px;
+  border: solid 1px lightgrey;
+}
+#Priority {
+  font-size: 14px;
+}
+#Priority > select {
+  width: 98%;
+  height: 30px;
+  border-radius: 4px;
+  border: solid 1px lightgrey;
+}
+#taskBtn {
+  border: none;
+  height: 30px;
+  border-radius: 4px;
+  margin-top: 30px;
+  color: white;
+  background-color: black;
+}
+/* !taskBar */
+/* #taskBar {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+/* !Away */
+/* #away {
+  width: 100vw;
+  height: 100vh;
+} */
