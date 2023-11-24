@@ -1,4 +1,4 @@
-const btn = document.getElementById("btn");
+const bt = document.getElementById("btn");
 
 btn.addEventListener("click", () => {
   const TaskBar = document.getElementById("taskBar");
