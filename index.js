@@ -1,6 +1,7 @@
-const bt = document.getElementById("btn");
+const xBtn = document.getElementById("xMark");
+//!title
+const taskBtn = document.getElementById("taskBtn");
 
-btn.addEventListener("click", () => {
-  const TaskBar = document.getElementById("taskBar");
-  TaskBar.style.removeProperty("dislpay");
+taskBtn.addEventListener("click", () => {
+  console.log("k");
 });

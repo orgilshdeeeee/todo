@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/079078c59d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -15,9 +16,37 @@
           <span class="count">0</span>
         </div>
 
-        <div></div>
+        <div draggable="true" id="card-con">
+          <div id="card">
+              <button id="fa-check">
+                <i class="fa-solid fa-check" style="color: #000000;"></i>
+              </button>
+  
+            <div id="main">
+              <h4>Title</h4>
+  
+              <p>
+                adasdbabbceuyberb hjasda
+              </p>
 
-        <button id="btn">
+              <div id="priorityLvl">High</div>
+            </div>
+            
+            <div id="card-btns">
+              <!-- cancel -->
+              <button id="xMark">
+                <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+              </button>
+              
+              <!-- pen -->
+              <button id="pen">
+                <i class="fa-solid fa-pen-to-square fa-xs" style="color: #000000;"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn">
           <span>+</span>
           <span>Add card</span>
         </button>
@@ -31,7 +60,7 @@
 
         <div></div>
 
-        <button id="btn">
+        <button class="btn">
           <span>+</span>
           <span>Add card</span>
         </button>
@@ -45,7 +74,7 @@
 
         <div></div>
 
-        <button id="btn">
+        <button class="btn">
           <span>+</span>
           <span>Add card</span>
         </button>
@@ -59,24 +88,27 @@
 
         <div></div>
 
-        <button id="btn">
+        <button class="btn">
           <span>+</span>
           <span>Add card</span>
         </button>
       </div>
       <div id="addTaskBar">
         <h1>Add task</h1>
-
+        
+        <!-- title -->
         <div id="Title">
           <span class="block">Title</span>
-          <input type="text" />
+          <input id="inputTitle" type="text" />
         </div>
 
+        <!-- Description -->
         <div id="Description">
           <span class="block">Description</span>
-          <input type="text" />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
 
+        <!-- Status -->
         <div id="Status">
           <span class="block">Status</span>
           <select name="" id="">
@@ -87,6 +119,7 @@
           </select>
         </div>
 
+        <!-- Priority -->
         <div id="Priority">
           <span class="block">Priority</span>
           <select name="" id="">
@@ -104,5 +137,6 @@
       <div id="taskBar">
         <div id="away"></div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

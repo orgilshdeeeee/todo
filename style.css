@@ -35,7 +35,7 @@ main {
 .count {
   color: rgba(0, 0, 0, 0.5);
 }
-#btn {
+.btn {
   border: none;
   align-items: center;
   display: flex;
@@ -44,10 +44,10 @@ main {
   gap: 16px;
   background-color: rgb(235, 236, 240);
 }
-#btn > span {
+.btn > span {
   font-size: 16px;
 }
-#btn:hover {
+.btn:hover {
   background-color: rgb(211 212 216);
 }
 /* !addTask */
@@ -81,10 +81,11 @@ main {
 #Description {
   font-size: 14px;
 }
-#Description > input {
+#Description > textarea {
   width: 98%;
   height: 100px;
   border-radius: 4px;
+  resize: none;
   border: solid 1px lightgrey;
 }
 #Status {
@@ -112,6 +113,66 @@ main {
   margin-top: 30px;
   color: white;
   background-color: black;
+}
+/* !card */
+#card-con {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#card {
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px;
+  gap: 12px;
+  display: flex;
+}
+#fa-check {
+  border: solid 1px rgb(160 160 160);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+}
+#fa-check:hover {
+  background-color: rgb(229 229 229);
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#priorityLvl {
+  border: solid 1px rgb(160 160 160);
+  width: fit-content;
+  font-size: 13px;
+  border-radius: 8px;
+  padding: 4px;
+}
+#card-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#xMark {
+  border: solid 1px rgb(160 160 160);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+}
+#xMark:hover {
+  background-color: rgb(229 229 229);
+}
+#pen {
+  border: solid 1px rgb(160 160 160);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+}
+#pen:hover {
+  background-color: rgb(229 229 229);
 }
 /* !taskBar */
 /* #taskBar {
